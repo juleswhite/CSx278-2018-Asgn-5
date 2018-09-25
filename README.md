@@ -136,7 +136,8 @@ Frequently asked qeustions:
 
 # Part 3
 
-Implement, document, and test your application. 
+Implement, document, test, and deploy your application. Deployment instructions for the original code base will
+be posted soon.
 
 You will be scored on:
 
