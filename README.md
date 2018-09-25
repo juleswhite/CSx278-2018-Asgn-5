@@ -159,4 +159,5 @@ Project Repo: https://github.com/<you>/<your project>
 
 ```
 
-You will demo your application in class. The demo schedule will be announced at a future date.
+Your application will be demoed in class. The demo schedule will be announced at a future date. You should assume
+that someone else may be running your demo based on the documentation that you provide.
