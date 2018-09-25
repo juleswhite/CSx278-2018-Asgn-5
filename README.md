@@ -82,9 +82,11 @@ your process for building the application. Your process should begin at the earl
 user, collecting requirements, etc. and run through brainstorming solutions to implementation to testing and on 
 to maintenance. You should explain what you would do to ensure that the application development is sustainable, that 
 you are building something of value to users, and that your assumptions are correct. You are free to use any 
-processes, patterns, etc. that you want. 
+processes, patterns, etc. that you want. You should make sure that you capture the requirements for the application
+and your overall goals in some reasonable format (you choose the format, but make sure it makes sense for the problem /
+process).
 
-Add your process to your README.md file at the end as this section:
+Add your requirements and process to your README.md file at the end as this section:
 
 ```
 
@@ -95,6 +97,10 @@ Add your process to your README.md file at the end as this section:
    ## Question 2:
    ...answers from everyone to question 2....
    ....
+   
+   # Requirements
+   
+   .... your requirements here ...
    
    # Development Approach
    
