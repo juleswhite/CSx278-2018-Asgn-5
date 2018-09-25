@@ -139,6 +139,9 @@ Frequently asked qeustions:
 Implement, document, test, and deploy your application. Deployment instructions for the original code base will
 be posted soon.
 
+Just like real world software engineering, you should expect and plan for requirement changes. Any changes will
+be announced via the class mailing list and added to this README.md file.
+
 You will be scored on:
 
 1. How well the application solves the intended problem
