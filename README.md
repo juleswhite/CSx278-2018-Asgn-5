@@ -8,6 +8,9 @@ experience with Vanderbilt in some way. The only constraint is that the *INITIAL
 application must be text messaging. For example, a text messaging application that responds with
 URLs that pull up a web page with useful information is fine.
 
+You must be able to complete the initial prototype by the Part 3 deadline listed on Brightspace.
+All other deadlines are listed on Brightspace.
+
 # Part 1
 
 For the first part of the assignment, you need to go and talk to the group of people that you 
@@ -125,7 +128,7 @@ Frequently asked qeustions:
 4. What format should I use to describe my development approach? Describe it as if you were trying to communicate
    it to a new team member and wanted them to know what you do and why you are doing it. You choose the format that
    you think best accomplishes those goals.
-5. Can I choose something larger than can be completed in one week? Yes, but you must "stub" out the functionality
+5. Can I choose something larger than can be completed by the deadline? Yes, but you must "stub" out the functionality
    and have at least some reasonable piece of the application completed. You will need to give a demo of your
    application and explain why the parts that you built were the most important to start with and provide 
    convincing evidence that you have a good solution.
