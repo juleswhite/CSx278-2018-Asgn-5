@@ -147,7 +147,12 @@ You will be scored on:
 5. Quality of the tests
 6. How well your demo goes
 
-Turn your solution in by committing your code to your repo. Your solution will be graded based on what was committed
-prior to the deadline.
+Turn your solution in by committing your code to a branch named "prototype" and then submitting a part3.txt file
+to Brightspace in this format:
+
+```
+Project Repo: https://github.com/<you>/<your project>
+
+```
 
 You will demo your application in class. The demo schedule will be announced at a future date.
