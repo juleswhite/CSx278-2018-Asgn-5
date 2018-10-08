@@ -10,11 +10,7 @@ IAM, AWS Cloudformation, and Twilio programmatic SMS.
 
 ## Instructions
 
-1. Install the Serverless framework and all dependencies (NodeJs, etc.):
-   https://serverless.com/framework/docs/providers/aws/guide/installation/ and verify 
-   that the "sls" command is on your path and add it if it is not
-
-2. If you already have an AWS credentials file, you can skip this step.
+1. If you already have an AWS credentials file, you can skip this step.
    
    You should log directly into https://aws.amazon.com/ "Sign into the console". After signing
    in, click on "Services" in the upper left and then select "IAM". Select "Users" and then
@@ -45,7 +41,7 @@ IAM, AWS Cloudformation, and Twilio programmatic SMS.
    
    Write down the FULL PATH to your .aws/credentials file.
    
-3. READ CAREFULLY - the instructions vary based on OS version!
+2. READ CAREFULLY - the instructions vary based on OS version!
 
    ** OS X or Windows Professional, Enterprise, Education editions with Hyper-V: **
    
@@ -80,10 +76,10 @@ IAM, AWS Cloudformation, and Twilio programmatic SMS.
    
    Make sure that you see your project code in the output.
    
-   You can exit the Docker container with "exit". 
+   **Exit the Docker container with "exit".**
    
 
-4. Edit the ".gitignore" file and add the following line:
+3. Edit the ".gitignore" file (in your project and NOT inside of the Docker container) and add the following line:
 
    ```
    /credentials
@@ -92,9 +88,10 @@ IAM, AWS Cloudformation, and Twilio programmatic SMS.
    This will ensure that your credentials don't get added to your git repo, which is
    REALLY bad.
    
-5. Copy your .aws/credentials file you created earlier to the root of your project. It should be at the top-level of your project without the ".aws" directory.
+4. Copy your .aws/credentials file that you created earlier to the root of your project. It should be at the top-level 
+   of your project WITHOUT the ".aws" directory.
 
-6. Create a file named "Dockerfile" (no extension) in the root of the project with the following contents:
+5. Create a file named "Dockerfile" (no extension) in the root of the project with the following contents:
 
    ```
    From juleswhite/cs27x:asgn4-with-deps
@@ -107,7 +104,7 @@ IAM, AWS Cloudformation, and Twilio programmatic SMS.
    CMD sls deploy
    ```
    
-7. Test that the Dockerfile was created correctly by running:
+6. Test that the Dockerfile was created correctly by running:
 
    ```
    docker build -t asgn4 .
@@ -116,11 +113,11 @@ IAM, AWS Cloudformation, and Twilio programmatic SMS.
    You should see "successfully built xxxxx" as the next to last line of output.
    
    
-8. Create a Twilio account and enable 2-factor auth
+7. Create a Twilio account and enable 2-factor auth
 
-9. You will need to fund the account with $20 (you can fund the account after class)
+8. You will need to fund the account with $20 (you can fund the account after class)
 
-   When you setup billing:
+   When you set up billing:
 
    ```
    WARNING: DO NOT ENABLE AUTO-RECHARGE ON YOUR ACCOUNT
@@ -137,14 +134,20 @@ IAM, AWS Cloudformation, and Twilio programmatic SMS.
    At the end of the semester, you should go and release this phone number and
    cancel your Twilio account if you are no longer going to use it.
 
-10. Go to Twilio and buy an SMS-enabled phone number with a 615 area code (or another 
+9. Go to Twilio and buy an SMS-enabled phone number with a 615 area code (or another 
     area code of your choosing) and write down the number. You can do this after
     class if needed.
     
-11. Go to Twilio settings and write down your live and test credentials
+10. Go to Twilio settings and write down your live and test credentials under Home->Settings
 
-12. Create secure secrets for your Twilio credentials in AWS, by running these
-     commands (fill-in <...>):
+11. Launch a bash shell in the Docker container that you built with this command:
+
+    ```
+    docker run -it asgn4 /bin/bash
+    ```
+
+12. From within the running container, create secure secrets for your Twilio credentials in AWS, by running these
+    commands (fill-in <...>):
 
     ```
     sls secrets set --name twilio-prod-account-sid --text <your live sid> --region us-east-1
@@ -168,11 +171,13 @@ IAM, AWS Cloudformation, and Twilio programmatic SMS.
     Serverless: Validating secrets
     Serverless: Secrets validated
     ```
+    
+    **When you are done, exit the container with "exit".**
 
 14. To learn more about serverless secrets management, see:
     https://github.com/trek10inc/serverless-secrets
 
-15. Set BucketName in serverless.yml to "cs4278-asgnx-state-<...>"(fill <...> with your
+15. In your project, set BucketName in serverless.yml to "cs4278-asgnx-state-<...>"(fill <...> with your
     own name). You must choose a bucket name that is globally unique to AWS S3. If you do
     not choose a unique name, you will get the 
     "bucket already exists" error described below. **Make sure that you edit all three places
@@ -230,7 +235,7 @@ handle-msg: asgnx-dev-handle-msg
     ```
 
 18. Copy the endpoint URL for POST and go to Twilio. In Twilio, select the phone number
-    that you purchased and set the "Messaging" "A message comes in" to "Webhook" and then
+    that you purchased and set the "Messaging" / "A message comes in" to "Webhook" and then
     paste in the URL for POST. Make sure "HTTP Post" is selected after the URL. Save the
     changes. If needed, do this after class when you fund your Twilio account.
 
