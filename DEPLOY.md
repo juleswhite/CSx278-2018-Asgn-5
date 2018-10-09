@@ -70,11 +70,9 @@ IAM, AWS Cloudformation, and Twilio programmatic SMS.
    
    ```
    root@b9e0fa6ea890:/project# ls /project
-   Dockerfile  README.md	    deploy.edn	  out		     project.clj  serverless.yml   src	   test
-   LICENSE     assignment.edn  node_modules  package-lock.json  resources	  shadow-cljs.edn  target
    ```
    
-   Make sure that you see your project code in the output.
+   The project folder should be empty.
    
    **Exit the Docker container with "exit".**
    
