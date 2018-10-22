@@ -165,5 +165,14 @@ Project Repo: https://github.com/<you>/<your project>
 
 ```
 
-Your application will be demoed in class. The demo schedule will be announced at a future date. You should assume
-that someone else may be running your demo based on the documentation that you provide.
+You have the option of personally demoing your app in class, having the instructor demo your app live in class via a script, turning in screenshots / screencasts of your deployed app working, or turning in a screencast of an undeployable app working in the terminal. Screencasts of undeployed apps will not score well. 
+
+Regardless of what option you choose, you must fill out the demo sign-up form sent to you via email and posted on Brightspace.
+
+If you choose to demo personally, you do not need to do anything. 
+
+If you choose to have the instructor demo the app, bring a printed copy of the demo script that was discussed in the last class with you and give it to the instructor at the start of the next class.
+
+If you choose to turn in screenshots or a screencast, add Dropbox, Google Drive, Box, etc. links to them in your part3.txt file.
+
+
