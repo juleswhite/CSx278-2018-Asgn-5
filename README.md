@@ -169,9 +169,9 @@ You have the option of 1) personally demoing your app in class, 2) having the in
 
 Regardless of what option you choose, you must fill out the demo sign-up form sent to you via email and posted on Brightspace.
 
-If you choose to demo personally, you do not need to do anything other than make sure you have a way to display the text messaging or other interactions on (or a screencast) on the projector in class. 
+If you choose to demo personally, you do not need to do anything other than make sure you have a way to display the text messaging or other interactions (or a screencast) on the projector in class. 
 
-If you choose to have the instructor demo the app, bring a printed copy of the demo script that was discussed in the last class with you and give it to the instructor at the start of the next class.
+If you choose to have the instructor demo the app, bring a printed copy of the demo script with you and give it to the instructor.
 
 If you choose to turn in screenshots or a screencast, add Dropbox, Google Drive, Box, etc. links to them in your part3.txt file.
 
