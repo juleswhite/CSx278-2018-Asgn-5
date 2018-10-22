@@ -165,7 +165,7 @@ Project Repo: https://github.com/<you>/<your project>
 
 ```
 
-You have the option of personally demoing your app in class, having the instructor demo your app live in class via a script, turning in screenshots / screencasts of your deployed app working, or turning in a screencast of an undeployable app working in the terminal. Screencasts of undeployed apps will not score well. 
+You have the option of 1) personally demoing your app in class, 2) having the instructor demo your app live in class via a script, 3) turning in screenshots / screencasts of your deployed app working, or 4) turning in a screencast of an undeployable app working in the terminal. Screencasts of undeployed apps will not score well. 
 
 Regardless of what option you choose, you must fill out the demo sign-up form sent to you via email and posted on Brightspace.
 
